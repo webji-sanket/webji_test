@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<form>
+		<div class="container">
+			<h1><b>Address Info</b></h1><hr><br>
+			<h2>Current Address</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="lname">State:</label>
+						<select class="form-control" id="s1" name="s1">
+						  <option value="select">select</option>
+						  <option value="Maharastra">Maharastra</option>
+						</select>
+						</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Distict:</label>
+						<select class="form-control" id="d1" name="d1" >
+						  <option value="select">select</option>
+						  <option value="Amravati">Amravati</option>
+						  <option value="Wardha">Wardha</option>
+						</select>
+						</div> 
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">City:</label>
+						<select class="form-control" id="c1" name="c1">
+						  <option value="select"></option>
+						  <option value="Amravati">Amravati</option>
+						  <option value="Pulgaon">Pulgaon</option>
+						</select>
+						</div> 
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Village:</label>
+					<input type="text" style="width: 100%;" id="v1" name="v1"><br><br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Pincode:</label>
+						<select class="form-control" id="p1" name="p1">
+						  <option value="select"></option>
+						  <option value="444601">444601</option>
+						  <option value="444601">444601</option>
+						  <option value="4423025">4423025</option>
+						</select> 
+						</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">House No:</label>
+					<input type="text" style="width: 100%;" id="h1" name="h1"><br><br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Landmark 1:</label>
+					<input type="text" style="width: 100%;" id="l1" name="l2"><br><br>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">2:</label>
+					<input type="text" style="width: 100%;" id="z1" name="z1"><br><br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Landmark 3:</label>
+					<input type="text" style="width: 100%;" id="x1" name="x1"><br><br>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">4:</label>
+					<input type="text" style="width: 100%;" id="g1" name="g1"><br><br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">House Type:</label>
+						<select class="form-control" id="y1" name="y1">
+						  <option value="select">select</option>
+						  <option value="Rental">Rental</option>
+						  <option value="flat">flat</option>
+						</select>
+						</div> 
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Map Link:</label>
+					<input type="text" style="width: 100%;" id="u1" name="u1"><br><br>
+					</div>
+				</div>
+			</div>
+		 		<div class="form-check">
+					<div class="form-group">
+					  <input class="form-check-input" type="checkbox" value="" name="homepostalcheck" id="homepostalcheck">
+					  <label class="form-check-label" for="flexCheckDefault">
+					   Set Curret as permanent
+					  </label>
+					</div>
+				</div> 
+				<select id="sel" onchange="toggle()">
+            <option value="1" selected>Hide</option>
+            <option value="2">Show</option>
+            
+        </select>
+        <div class="toshow" style="display:none;" id="Permanent">
+        <div class="container">   	
+				<p></p><h2>Permanent Address</h2>
+				<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">State:</label>
+						<select class="form-control" id="s2" name="s2">
+						  <option value="select">select</option>
+						  <option value="Maharastra">Maharastra</option>
+						</select>
+						</div> 
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Distict:</label>
+						<select class="form-control" id="d2" name="d2">
+						  <option value="select">select</option>
+						  <option value="Amravati">Amravati</option>
+						  <option value="Wardha">Wardha</option>
+						</select>
+						</div> 
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">City:</label>
+						<select class="form-control" id="c2" name="c2">
+						  <option value="select">select</option>
+						  <option value="Amravati">Amravati</option>
+						  <option value="Pulgaon">Pulgaon</option>
+						</select>
+						</div> 
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Village:</label>
+					<input type="text" value="" style="width: 100%;" id="v2" name="v2"><br><br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Pincode:</label>
+						<select class="form-control" id="p2" name="p2">
+						  <option value="select">select</option>
+						  <option value="442302">442302</option>
+						  <option value="444601">444601</option>
+						  <option value="4423025">4423025</option>
+						</select> 
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">House No:</label>
+					<input type="text" value="" style="width: 100%;" id="h2" name="h2"><br><br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Landmark 1:</label>
+					<input type="text" value="" style="width: 100%;" id="l2" name="l2"><br><br>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">2:</label>
+					<input type="text" value="" style="width: 100%;" id="z2" name="z2"><br><br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Landmark 3:</label>
+					<input type="text" value="" style="width: 100%;" id="x2" name="x2"><br><br>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">4:</label>
+					<input type="text" value="" style="width: 100%;" id="g2" name="g2"><br><br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">House Type:</label>
+						<select class="form-control" id="y2" name="y2">
+						  <option value="select">select</option>
+						  <option value="Rental">Rental</option>
+						  <option value="flat">flat</option>
+						</select>
+					</div> 
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+					<label for="lname">Map Link:</label>
+					<input type="text" value="" style="width: 100%;" id="u2" name="u2"><br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		<script>
+		function setBillingAddress(){
+  if ($("#homepostalcheck").is(":checked")) {
+    $('#s2').val($('#s1').val());
+     $('#d2').val($('#d1').val());
+      $('#c2').val($('#c1').val());
+      $('#v2').val($('#v1').val());
+      $('#p2').val($('#p1').val());
+      $('#h2').val($('#h1').val());
+      $('#l2').val($('#l1').val());
+      $('#z2').val($('#z1').val());
+      $('#x2').val($('#x1').val());
+      $('#g2').val($('#g1').val());
+      $('#y2').val($('#y1').val());
+      $('#u2').val($('#u1').val());
+      
+  } else {
+    $('#s2').val("select");
+    $('#d2').val("select");
+    $('#c2').val("select");
+    $('#v2').val(" ");
+    $('#p2').val("select");
+    $('#h2').val(" ");
+    $('#l2').val(" ");
+    $('#z2').val(" ");
+    $('#x2').val(" ");
+    $('#g2').val("select");
+    $('#y2').val("select");
+    $('#u2').val("select");
+  }
+}
+
+$('#homepostalcheck').click(function(){
+  setBillingAddress();
+})
+</script>
+<script>
+    function toggle() {
+        var Permanent = document.getElementById('Permanent');
+        if (Permanent.style.display == 'block') {
+            Permanent.style.display = 'none';
+        }
+        else {
+            Permanent.style.display = 'block';
+        }
+    }
+</script>
+
+	</form>
+</body>
+</html>
